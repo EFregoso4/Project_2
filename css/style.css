@@ -1,103 +1,152 @@
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">  
+    <title>Project 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-header {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-h1 {
-  font-size: 2.5em;
-  margin: 0;
-}
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-/* Table Styling */
-#planets {
-  width: 90%;
-  margin: 40px auto;
-  border-collapse: collapse;
-  background-color: #ecf0f1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-#planets th, #planets td {
-  padding: 12px 20px;
-  text-align: center;
-  border: 1px solid;
-}
+        nav ul li a:hover {
+            color: #f39c12;
+        }
 
-#planets th {
-  background-color: #34495e;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+        /* Main Content */
+        main {
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-#planets td {
-  background-color: #f4f4f9;
-  font-size: 1em;
-}
+        h1, h3 {
+            color: #333;
+        }
 
-#planets td:first-child {
-  background-color: #34495e;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+        p, ul {
+            color: #555;
+        }
 
-/* Image Styling */
-#planets img {
-  width: 80px;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
 
-#planets tr:nth-child(even) td {
-  background-color: #d5d8dc;
-}
+        section {
+            margin-bottom: 20px;
+        }
 
-#planets tr:hover td {
-  background-color: #bdc3c7;
-  color: #2c3e50;
-}
+        ul li {
+            margin-bottom: 10px;
+        }
 
-/* Footer Styling */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #2c3e50;
-  color: white;
-}
+        /* Footer (optional if you plan to add one) */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Introduction">Introduction</a></li>
+                <li><a href="resume.html" title="Resume">Resume</a></li>
+                <li><a href="video_profile.html" title="Music">Music</a></li>
+            </ul>
+        </nav>
+    </header>
 
-footer a {
-  color: #ecf0f1;
-  text-decoration: none;
-}
+    <main>
+        <section>
+            <h1>Introduction</h1>
+            <div>
+                <img src="images/Me.jpg" alt="A portrait of Emiliano Fregoso in the introduction page">
+                <p>Hello and welcome! My name is <strong>Emiliano Fregoso</strong>, and welcome to my page! 
+                    This first page will be an introduction about myself.
+                </p>
+            </div>
+        </section>
 
-footer a:hover {
-  text-decoration: underline;
-}
+        <section>
+            <h3>About Myself</h3>
+            <div>
+                <img src="images/City.jpg" alt="A portrait of Downtown Chicago in the introduction page">
+                <ul>
+                    <li>I was born here in Chicago and currently still live in this great city.</li>
+                    <li>I'm a huge fan of the Chicago Bulls, Blackhawks, and White Sox.</li>
+                    <li>I am a twin and the oldest child in my family.</li>
+                    <li>I love to spend time with my siblings and cousins when I have free time.</li>
+                </ul>
+            </div>
+        </section>
 
-/* Response Design */
-@media (max-width: 768px) {
-  #planets img {
-      width: 60px;
-  }
-<<<<<<< HEAD
+        <section>
+            <h3>Hobbies</h3>
+            <div>
+                <img src="images/Sports.jpg" alt="A portrait of Fireworks at White Sox park in the introduction page">
+                <ul>
+                    <li>I love to play video games. I have been playing since I was 6 years old. My favorite game of all time is MLB The Show 16.</li>
+                    <li>I also bake, creating dishes like flan, cookies, and currently a work in progress—cake.</li>
+                    <li>During my free time, I love to watch sporting events, either in person or on TV.</li>
+                </ul>
+            </div>
+        </section>
 
-  #planets th, #planets td {
-      padding: 10px;
-  }
-}
+        <section>
+            <h3>Education</h3>
+            <ul>
+                <li>I'm a 2nd-year undergraduate student in Information Technology & Management.</li>
+                <li>In the future, I plan to go into software management or get a certification in teaching.</li>
+                <li>Recently, I earned my CompTIA A+ (220-1102) certification.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer example, if needed -->
+    <footer>
+        <p>Copyright &copy; 2024 Emiliano Fregoso. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
 
   
