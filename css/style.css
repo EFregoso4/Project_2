@@ -1,183 +1,111 @@
-<!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <meta charset="utf-8">  
-    <title>Project 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif; /* Font for the entire page */
-            line-height: 1.6; /* Spacing between lines */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            background-color: #f4f4f4; /* Light grey background */
-            color: #333; /* Dark text color */
-        }
-        
-        header {
-            background-color: #333; /* Dark background for header */
-            color: #fff; /* White text color */
-            padding: 20px; /* More padding for header */
-            text-align: center; /* Centered text */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-        }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    line-height: 1.6; /* Spacing between lines */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text color */
+}
 
-        nav ul {
-            list-style: none; /* Remove bullet points from list */
-            padding: 0; /* Remove padding */
-            margin: 0; /* Remove margin */
-        }
+header {
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text color */
+    padding: 20px; /* More padding for header */
+    text-align: center; /* Centered text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
 
-        nav ul li {
-            display: inline; /* Display list items inline */
-            margin: 0 15px; /* Space between menu items */
-        }
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
 
-        nav ul li a {
-            color: #fff; /* White text for links */
-            text-decoration: none; /* No underline */
-            font-weight: bold; /* Bold links */
-            padding: 5px 10px; /* Padding around links */
-            border-radius: 4px; /* Rounded corners */
-            transition: background-color 0.3s; /* Smooth background transition */
-        }
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between menu items */
+}
 
-        nav ul li a:hover {
-            color: #f39c12; /* Change link color on hover */
-            background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
-        }
+nav ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold links */
+    padding: 5px 10px; /* Padding around links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
 
-        /* Main Content */
-        main {
-            margin: 20px auto; /* Center main content */
-            max-width: 900px; /* Maximum width for main content */
-            padding: 20px; /* Padding inside main */
-            background-color: white; /* White background */
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-            border-radius: 8px; /* Rounded corners */
-        }
+nav ul li a:hover {
+    color: #f39c12; /* Change link color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
 
-        h1, h3 {
-            color: #333; /* Dark color for headings */
-        }
+/* Main Content */
+main {
+    margin: 20px auto; /* Center main content */
+    max-width: 900px; /* Maximum width for main content */
+    padding: 20px; /* Padding inside main */
+    background-color: white; /* White background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+}
 
-        p, ul {
-            color: #555; /* Medium grey for text */
-        }
+h1, h3 {
+    color: #333; /* Dark color for headings */
+}
 
-        img {
-            max-width: 100%; /* Responsive image */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Block display for images */
-            margin: 10px 0; /* Margin around images */
-            border-radius: 8px; /* Rounded corners for images */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for images */
-        }
+p, ul {
+    color: #555; /* Medium grey for text */
+}
 
-        section {
-            margin-bottom: 20px; /* Space between sections */
-            padding: 15px; /* Padding inside sections */
-            border: 1px solid #ddd; /* Light border around sections */
-            border-radius: 8px; /* Rounded corners for sections */
-            background-color: #fafafa; /* Light background for sections */
-        }
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display for images */
+    margin: 10px 0; /* Margin around images */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for images */
+}
 
-        ul li {
-            margin-bottom: 10px; /* Space between list items */
-            padding-left: 10px; /* Indent list items */
-        }
+section {
+    margin-bottom: 20px; /* Space between sections */
+    padding: 15px; /* Padding inside sections */
+    border: 1px solid #ddd; /* Light border around sections */
+    border-radius: 8px; /* Rounded corners for sections */
+    background-color: #fafafa; /* Light background for sections */
+}
 
-        /* Footer (optional if you plan to add one) */
-        footer {
-            background-color: #333; /* Dark background for footer */
-            color: #fff; /* White text color */
-            text-align: center; /* Centered text */
-            padding: 10px 0; /* Padding for footer */
-            position: relative; /* Footer position */
-            bottom: 0; /* Align at the bottom */
-            width: 100%; /* Full width */
-            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Shadow above footer */
-            margin-top: 20px; /* Space above footer */
-        }
+ul li {
+    margin-bottom: 10px; /* Space between list items */
+    padding-left: 10px; /* Indent list items */
+}
 
-        /* Responsive Styles */
-        @media (max-width: 600px) {
-            nav ul li {
-                display: block; /* Stack links on small screens */
-                margin: 10px 0; /* Margin between stacked items */
-            }
+/* Footer (optional if you plan to add one) */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 10px 0; /* Padding for footer */
+    position: relative; /* Footer position */
+    bottom: 0; /* Align at the bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Shadow above footer */
+    margin-top: 20px; /* Space above footer */
+}
 
-            main {
-                padding: 10px; /* Less padding on small screens */
-            }
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack links on small screens */
+        margin: 10px 0; /* Margin between stacked items */
+    }
 
-            header {
-                padding: 15px; /* Less padding on small screens */
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" title="Introduction">Introduction</a></li>
-                <li><a href="resume.html" title="Resume">Resume</a></li>
-                <li><a href="video_profile.html" title="Music">Music</a></li>
-            </ul>
-        </nav>
-    </header>
+    main {
+        padding: 10px; /* Less padding on small screens */
+    }
 
-    <main>
-        <section>
-            <h1>Introduction</h1>
-            <div>
-                <img src="images/Me.jpg" alt="A portrait of Emiliano Fregoso in the introduction page">
-                <p>Hello and welcome! My name is <strong>Emiliano Fregoso</strong>, and welcome to my page! 
-                    This first page will be an introduction about myself.
-                </p>
-            </div>
-        </section>
-
-        <section>
-            <h3>About Myself</h3>
-            <div>
-                <img src="images/City.jpg" alt="A portrait of Downtown Chicago in the introduction page">
-                <ul>
-                    <li>I was born here in Chicago and currently still live in this great city.</li>
-                    <li>I'm a huge fan of the Chicago Bulls, Blackhawks, and White Sox.</li>
-                    <li>I am a twin and the oldest child in my family.</li>
-                    <li>I love to spend time with my siblings and cousins when I have free time.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h3>Hobbies</h3>
-            <div>
-                <img src="images/Sports.jpg" alt="A portrait of Fireworks at White Sox park in the introduction page">
-                <ul>
-                    <li>I love to play video games. I have been playing since I was 6 years old. My favorite game of all time is MLB The Show 16.</li>
-                    <li>I also bake, creating dishes like flan, cookies, and currently a work in progress—cake.</li>
-                    <li>During my free time, I love to watch sporting events, either in person or on TV.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h3>Education</h3>
-            <ul>
-                <li>I'm a 2nd-year undergraduate student in Information Technology & Management.</li>
-                <li>In the future, I plan to go into software management or get a certification in teaching.</li>
-                <li>Recently, I earned my CompTIA A+ (220-1102) certification.</li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Footer example, if needed -->
-    <footer>
-        <p>Copyright &copy; 2024 Emiliano Fregoso. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+    header {
+        padding: 15px; /* Less padding on small screens */
+    }
+}
