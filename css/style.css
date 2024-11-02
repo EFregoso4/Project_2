@@ -2,7 +2,7 @@
 <html lang="en"> 
 <head>
     <meta charset="utf-8">  
-    <title>Project 2</title>
+    <title>Project 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /* General Styles */
@@ -86,14 +86,6 @@
         ul li {
             margin-bottom: 10px; /* Space between list items */
             padding-left: 10px; /* Indent list items */
-            position: relative; /* For pseudo-elements */
-        }
-
-        ul li::before {
-            content: "✔"; /* Checkmark before list items */
-            color: #28a745; /* Green color for checkmark */
-            position: absolute; /* Position checkmark */
-            left: 0; /* Align to left */
         }
 
         /* Footer (optional if you plan to add one) */
@@ -185,7 +177,7 @@
 
     <!-- Footer example, if needed -->
     <footer>
-        <p>Copyright &copy; Created in 2024 by Emiliano Fregoso. All Rights Reserved.</p>
+        <p>Copyright &copy; 2024 Emiliano Fregoso. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
