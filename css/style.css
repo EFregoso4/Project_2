@@ -7,81 +7,122 @@
     <style>
         /* General Styles */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif; /* Font for the entire page */
+            line-height: 1.6; /* Spacing between lines */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: #f4f4f4; /* Light grey background */
+            color: #333; /* Dark text color */
         }
         
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
+            background-color: #333; /* Dark background for header */
+            color: #fff; /* White text color */
+            padding: 20px; /* More padding for header */
+            text-align: center; /* Centered text */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
         }
 
         nav ul {
-            list-style: none;
-            padding: 0;
+            list-style: none; /* Remove bullet points from list */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
         }
 
         nav ul li {
-            display: inline;
-            margin: 0 15px;
+            display: inline; /* Display list items inline */
+            margin: 0 15px; /* Space between menu items */
         }
 
         nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
+            color: #fff; /* White text for links */
+            text-decoration: none; /* No underline */
+            font-weight: bold; /* Bold links */
+            padding: 5px 10px; /* Padding around links */
+            border-radius: 4px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth background transition */
         }
 
         nav ul li a:hover {
-            color: #f39c12;
+            color: #f39c12; /* Change link color on hover */
+            background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
         }
 
         /* Main Content */
         main {
-            margin: 20px auto;
-            max-width: 900px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto; /* Center main content */
+            max-width: 900px; /* Maximum width for main content */
+            padding: 20px; /* Padding inside main */
+            background-color: white; /* White background */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+            border-radius: 8px; /* Rounded corners */
         }
 
         h1, h3 {
-            color: #333;
+            color: #333; /* Dark color for headings */
         }
 
         p, ul {
-            color: #555;
+            color: #555; /* Medium grey for text */
         }
 
         img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 10px 0;
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Block display for images */
+            margin: 10px 0; /* Margin around images */
+            border-radius: 8px; /* Rounded corners for images */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for images */
         }
 
         section {
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Space between sections */
+            padding: 15px; /* Padding inside sections */
+            border: 1px solid #ddd; /* Light border around sections */
+            border-radius: 8px; /* Rounded corners for sections */
+            background-color: #fafafa; /* Light background for sections */
         }
 
         ul li {
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* Space between list items */
+            padding-left: 10px; /* Indent list items */
+            position: relative; /* For pseudo-elements */
+        }
+
+        ul li::before {
+            content: "✔"; /* Checkmark before list items */
+            color: #28a745; /* Green color for checkmark */
+            position: absolute; /* Position checkmark */
+            left: 0; /* Align to left */
         }
 
         /* Footer (optional if you plan to add one) */
         footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #333; /* Dark background for footer */
+            color: #fff; /* White text color */
+            text-align: center; /* Centered text */
+            padding: 10px 0; /* Padding for footer */
+            position: relative; /* Footer position */
+            bottom: 0; /* Align at the bottom */
+            width: 100%; /* Full width */
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Shadow above footer */
+            margin-top: 20px; /* Space above footer */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block; /* Stack links on small screens */
+                margin: 10px 0; /* Margin between stacked items */
+            }
+
+            main {
+                padding: 10px; /* Less padding on small screens */
+            }
+
+            header {
+                padding: 15px; /* Less padding on small screens */
+            }
         }
     </style>
 </head>
@@ -144,9 +185,7 @@
 
     <!-- Footer example, if needed -->
     <footer>
-        <p>Copyright &copy; 2024 Emiliano Fregoso. All Rights Reserved.</p>
+        <p>Copyright &copy; Created in 2024 by Emiliano Fregoso. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
-
-  
