@@ -14,26 +14,32 @@ header {
     padding: 20px 0; /* Increased padding for a bolder look */
 }
 
+nav {
+    text-align: center; /* Center the navigation bar */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Centered navigation items */
+    margin: 0; /* Remove default margin for the ul */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px; /* More space between links */
+    display: inline-block; /* Use inline-block for better spacing control */
+    margin: 0 30px; /* Increased margin between links */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold; /* Bold font for links */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 1.1em; /* Slightly larger font size */
+    transition: color 0.3s ease, transform 0.2s; /* Smooth transition for hover effect */
 }
 
 nav ul li a:hover {
     color: #ffeb3b; /* Bright color on hover */
+    transform: scale(1.05); /* Slightly enlarge the text on hover */
 }
 
 h1, h2 {
