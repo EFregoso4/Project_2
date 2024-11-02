@@ -1,97 +1,105 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif; /* Font for the entire page */
-    line-height: 1.6; /* Spacing between lines */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    background-color: #f4f4f4; /* Light grey background */
-    color: #333; /* Dark text color */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333; /* Dark background for header */
-    color: #fff; /* White text color */
-    padding: 20px; /* More padding for header */
-    text-align: center; /* Centered text */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Clearfix for floating elements */
+    overflow: hidden; 
+}
+
+nav {
+    float: right; /* Float the navigation to the right */
 }
 
 nav ul {
-    list-style: none; /* Remove bullet points from list */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline; /* Display list items inline */
-    margin: 0 15px; /* Space between menu items */
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff; /* White text for links */
-    text-decoration: none; /* No underline */
-    font-weight: bold; /* Bold links */
-    padding: 5px 10px; /* Padding around links */
-    border-radius: 4px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth background transition */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #f39c12; /* Change link color on hover */
-    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    color: #f39c12;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Main Content */
 main {
-    margin: 20px auto; /* Center main content */
-    max-width: 900px; /* Maximum width for main content */
-    padding: 20px; /* Padding inside main */
-    background-color: white; /* White background */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 h1, h3 {
-    color: #333; /* Dark color for headings */
+    color: #333;
 }
 
 p, ul {
-    color: #555; /* Medium grey for text */
+    color: #555;
 }
 
 img {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Block display for images */
-    margin: 10px 0; /* Margin around images */
-    border-radius: 8px; /* Rounded corners for images */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for images */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    float: left; /* Float images to the left */
+    margin-right: 15px; /* Space to the right of the images */
 }
 
 section {
-    margin-bottom: 20px; /* Space between sections */
-    padding: 15px; /* Padding inside sections */
-    border: 1px solid #ddd; /* Light border around sections */
-    border-radius: 8px; /* Rounded corners for sections */
-    background-color: #fafafa; /* Light background for sections */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    clear: both; /* Clear floats for each section */
 }
 
 ul li {
-    margin-bottom: 10px; /* Space between list items */
-    padding-left: 10px; /* Indent list items */
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
 
-/* Footer */
+/* Footer (positioned at the bottom of the content) */
 footer {
-    background-color: #333; /* Dark background for footer */
-    color: #fff; /* White text color */
-    text-align: center; /* Centered text */
-    padding: 10px 0; /* Padding for footer */
-    position: relative; /* Footer position */
-    bottom: 0; /* Align at the bottom */
-    width: 100%; /* Full width */
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Shadow above footer */
-    margin-top: 20px; /* Space above footer */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    position: relative; /* Ensure footer is positioned below content */
 }
 
 /* Responsive Styles */
@@ -107,5 +115,10 @@ footer {
 
     header {
         padding: 15px; /* Less padding on small screens */
+    }
+
+    img {
+        float: none; /* Remove float for images on small screens */
+        margin: 10px 0; /* Reset margin */
     }
 }
