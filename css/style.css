@@ -1,146 +1,97 @@
 /* General Styles */
 body {
-  font-family: Arial, Helvetica, sans-serif; /* Sets the font for the page */
-  line-height: 1.6; /* Improves readability */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  background-color: #f4f4f4; /* Light grey background */
-  color: #333; /* Dark grey text color */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
 }
 
 header {
-  background-color: #333; /* Dark background for header */
-  color: white; /* White text color */
-  padding: 20px; /* Padding inside header */
-  text-align: center; /* Centers header text */
-  position: relative; /* Allows for absolute positioning if needed */
-  z-index: 10; /* Keeps header above other content */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: #fff;
+    padding: 20px 0; /* Increased padding for a bolder look */
 }
 
 nav ul {
-  list-style: none; /* Removes bullets from the list */
-  padding: 0; /* Removes padding */
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Centered navigation items */
 }
 
 nav ul li {
-  display: inline; /* Displays menu items inline */
-  margin: 0 15px; /* Space between menu items */
+    display: inline;
+    margin: 0 20px; /* More space between links */
 }
 
 nav ul li a {
-  color: white; /* White link color */
-  text-decoration: none; /* No underline for links */
-  padding: 5px 10px; /* Padding around links */
-  border-radius: 4px; /* Rounded corners */
-  transition: background-color 0.3s; /* Smooth background transition */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Bold font for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+    color: #ffeb3b; /* Bright color on hover */
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase; /* Uppercase for headings */
+    letter-spacing: 2px; /* Space between letters for a classy look */
 }
 
 main {
-  max-width: 800px; /* Maximum width for main content */
-  margin: 20px auto; /* Centers the main section */
-  padding: 20px; /* Padding inside main */
-  background: white; /* White background for content */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-h1, h2, h3 {
-  color: #333; /* Heading color */
-  margin-top: 20px; /* Space above headings */
-  margin-bottom: 10px; /* Space below headings */
-}
-
-h1 {
-  font-size: 2em; /* Size for main heading */
-}
-
-h2 {
-  font-size: 1.5em; /* Size for secondary headings */
-}
-
-h3 {
-  font-size: 1.2em; /* Size for tertiary headings */
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff; /* White background for the main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 ul {
-  padding-left: 20px; /* Indentation for lists */
+    padding: 0;
 }
 
 ul li {
-  margin-bottom: 10px; /* Space between list items */
+    margin: 20px 0;
+    border: 1px solid #ccc; /* Light border for separation */
+    border-radius: 5px;
+    padding: 15px; /* Increased padding */
+    background-color: #f9f9f9; /* Soft background for song entries */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition effects */
 }
 
-img {
-  max-width: 100%; /* Responsive images */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 8px; /* Rounded corners for images */
-  margin: 10px 0; /* Space around images */
+ul li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-footer {
-  text-align: center; /* Centers footer text */
-  padding: 10px; /* Padding in footer */
-  background-color: #333; /* Dark footer background */
-  color: white; /* White footer text */
-  position: relative; /* Normal positioning */
-  bottom: 0; /* Aligns at the bottom */
-  width: 100%; /* Full width footer */
-  margin-top: 20px; /* Space above footer */
-  font-size: 0.9em; /* Smaller font size for footer */
+.song-title {
+    font-weight: bold;
+    font-size: 1.2em; /* Larger font for song titles */
+    color: #6a11cb; /* Color for song titles */
 }
 
-/* Additional Elements */
-.button {
-  background-color: #007bff; /* Button background color */
-  color: white; /* Button text color */
-  padding: 10px 15px; /* Padding for button */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s; /* Background color transition */
+.artist-name {
+    font-style: italic;
+    color: #555; /* Darker shade for artist names */
 }
 
-.button:hover {
-  background-color: #0056b3; /* Darker button on hover */
+iframe {
+    display: block;
+    margin: 10px auto;
+    width: 100%; /* Ensure the video takes full width */
+    max-width: 560px; /* Constrain the maximum width */
+    height: 315px; /* Maintain a good aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border for cleaner look */
+    transition: transform 0.2s; /* Transition for scaling effect */
 }
 
-.card {
-  background-color: white; /* White background for card */
-  border-radius: 10px; /* Rounded corners for card */
-  padding: 20px; /* Internal padding for card */
-  margin: 20px 0; /* Space between cards */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-}
-
-.card img {
-  border-radius: 10px; /* Match image corners to card corners */
-}
-
-blockquote {
-  border-left: 5px solid #007bff; /* Left border for blockquote */
-  margin: 20px 0; /* Space around blockquote */
-  padding-left: 15px; /* Indentation for text */
-  color: #555; /* Text color for blockquote */
-  font-style: italic; /* Italicize blockquote text */
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-  nav ul li {
-    display: block; /* Stacks links vertically on small screens */
-    margin: 10px 0; /* Space between links */
-  }
-
-  main {
-    padding: 10px; /* Reduced padding on smaller screens */
-  }
-
-  .button {
-    width: 100%; /* Full-width buttons on smaller screens */
-    margin-top: 10px; /* Space above buttons */
-  }
+iframe:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
